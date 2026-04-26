@@ -1,0 +1,225 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+
+}
+
+:root {
+   /* --primary-color:#4891ff; */
+    --primary-color: #dda0dd;
+    --light-color:#f4f4f6;
+    --dark-color:#111;
+
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style:none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Nav Bar */
+.navbar{
+    background:#fff;
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight:600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Utility Classes */
+
+.container {
+    max-width:1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.bg-container {
+
+    float:left;
+    height: 700px; 
+    width:500px;
+    background-image: url('/Users/annieakbari/Portfolio/images/IMG_5658.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 25px;
+
+}
+
+.left-container{
+    float:left;
+    height: auto;
+    width:500px;
+    background-color: #eee;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 25px;
+
+}
+
+.side-container {
+    float: right;
+    width: calc(100% - 500px);
+    padding: 25px;
+    /* background-color: #eee; */
+    border-radius: 25px;
+}
+
+
+.container-sm {
+    max-width:800;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.project-container{
+    max-width:1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Text Classes */
+
+.text-xxl {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 40px 0 20px;
+}
+
+.text-l {
+    font-size: 1 rem;
+    line-height: 1;
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 40px 0 20px;
+}
+
+.text{
+    margin: 20px 0 20px;
+}
+
+.text-b{
+    margin: 20px 0 20px;
+    color: #24A4FF
+}
+
+.text-h{
+    font-size:1rem;
+    line-height:1.2;
+    font-weight:600;
+    text-decoration:wavy;
+    margin: 30px 0 20px;
+}
+
+.image {
+    max-width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.search-image{
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.ProjectImage {
+    max-width: 50%;
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  /* background-color: #eee; */
+  background-color: #eee;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 15px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
